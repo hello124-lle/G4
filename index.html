@@ -140,3 +140,75 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Round Worms from Facebook</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #a2f5a2, #ffb6e6);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+
+    h1 {
+      color: #34a853;
+      font-size: 3rem;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px #ff69b4;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 50%;
+      border: 6px dashed #ff69b4;
+      transition: filter 0.3s ease;
+      animation: idleWiggle 4s ease-in-out infinite;
+    }
+
+    .gallery img:hover {
+      animation: wiggle 0.5s infinite;
+      filter: brightness(110%);
+      border-color: #34a853;
+    }
+
+    @keyframes wiggle {
+      0%   { transform: rotate(0deg); }
+      25%  { transform: rotate(2deg); }
+      50%  { transform: rotate(-2deg); }
+      75%  { transform: rotate(2deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    @keyframes idleWiggle {
+      0%   { transform: rotate(0deg); }
+      50%  { transform: rotate(1deg); }
+      100% { transform: rotate(0deg); }
+    }
+  </style>
+</head>
+<body>
+  <h1>My Facebook Worms Gallery</h1>
+  <div class="gallery">
+    <img src="https://scontent.xx.fbcdn.net/v/example1.jpg" alt="Photo 1">
+    <img src="https://scontent.xx.fbcdn.net/v/example2.jpg" alt="Photo 2">
+    <img src="https://scontent.xx.fbcdn.net/v/example3.jpg" alt="Photo 3">
+    <img src="https://scontent.xx.fbcdn.net/v/example4.jpg" alt="Photo 4">
+    <img src="https://scontent.xx.fbcdn.net/v/example5.jpg" alt="Photo 5">
+    <img src="https://scontent.xx.fbcdn.net/v/example6.jpg" alt="Photo 6">
+    <img src="https://scontent.xx.fbcdn.net/v/example7.jpg" alt="Photo 7">
+    <img src="https://scontent.xx.fbcdn.net/v/example8.jpg" alt="Photo 8">
+    <img src="https://scontent.xx.fbcdn.net/v/example9.jpg" alt="Photo 9">
+  </div>
+</body>
+</html>
